@@ -1,0 +1,28 @@
+# This file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# platform: osx-64
+anaconda-client=1.1.0=py27_0
+binstar=0.12=2
+clyent=0.4.0=py27_0
+freetype=2.5.5=0
+jpeg=8d=1
+libpng=1.6.17=0
+libtiff=4.0.6=0
+numpy=1.10.1=py27_0
+openssl=1.0.2d=0
+pandas=0.17.0=np110py27_0
+pillow=3.0.0=py27_1
+pip=7.1.2=py27_0
+python=2.7.10=2
+python-dateutil=2.4.2=py27_0
+pytz=2015.6=py27_0
+pyyaml=3.11=py27_1
+readline=6.2=2
+requests=2.8.1=py27_0
+setuptools=18.4=py27_0
+six=1.10.0=py27_0
+sqlite=3.8.4.1=1
+tk=8.5.18=0
+wheel=0.26.0=py27_1
+yaml=0.1.6=0
+zlib=1.2.8=0
