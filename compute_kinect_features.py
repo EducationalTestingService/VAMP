@@ -184,9 +184,9 @@ def format_conversion(df, body_part):
     return converted_df
 
 
-def compute_kinectic_energy(df_dict, body_part_weights_norm, frame_rate):
+def compute_kinetic_energy(df_dict, body_part_weights_norm, frame_rate):
     """
-    Computes the kinectic energy of the body on a per frame basis,
+    Computes the kinetic energy of the body on a per frame basis,
     using contribution from all body parts, where the weight of each
     body part represents the amount of contribution.
 
@@ -264,7 +264,7 @@ def main():
     """
     Extracts high-level, expressive body language features from a time-series
     motion trace. Extraction is on a per frame basis. For each BVH file, this
-    script generates frame-level feature values for (i) kinectic energy
+    script generates frame-level feature values for (i) kinetic energy
     (ii) symmetry indexes (iii) posture (iv) spatial dispacement. Please refer
     to the README.md on how to specify parameters for generating these feature
     values.
@@ -302,7 +302,7 @@ def main():
         for bp in body_part_weights:
             df_dict[bp] = format_conversion(df, bp)
 
-        ke_df = compute_kinectic_energy(
+        ke_df = compute_kinetic_energy(
             df_dict,
             body_part_weights_norm,
             frame_rate)

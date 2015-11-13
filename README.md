@@ -44,7 +44,7 @@ VAMP can be configured to extract expressive features from arbitrary body parts,
     			"LeftHand","RightHand"]
 ```    			
 
-For specifying the weights of each body part in contribution to the overall kinectic energy, use:
+For specifying the weights of each body part in contribution to the overall kinetic energy, use:
 
 ```javascript
 	"weights": {"Hips": 14.81, "Spine" : 12.65, "LeftShoulder" : 0.76875, 
