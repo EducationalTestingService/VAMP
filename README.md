@@ -31,12 +31,7 @@ After doing a `git clone` of VAMP, type the following to install the vamp conda 
 
 ```
 conda create --name vamp --file conda/vamp_conda_osx64.txt
-```
-
-Change directory into `conda` and type:
-
-```
-conda install -n vamp osx-64-cgkit-2.0.0-py27_0.tar.bz2
+conda install -n vamp -c https://conda.anaconda.org/cleong cgkit
 ```
 
 Configuration
