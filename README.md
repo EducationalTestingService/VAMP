@@ -4,6 +4,7 @@ Visualization and Analysis for Multimodal Presentation (VAMP)
 
 VAMP is a set of scripts designed to extract high-level, expressive body language features from synchronized video, audio and skeletal data streams recorded from multimodal presentations. Release of VAMP is incremental at this point, with the current focus on facilitating the extraction of frame-level, body language features from skeletal data files. VAMP is tested to run successfully on OS X 64-bit architecture, but would be expanded to support other platforms in the future.
 
+
 Reference
 ---------
 Full details of the VAMP framework is described in our [MLA'15 paper](http://benleong.net/downloads/icmi-mla-2015-leong.pdf):
@@ -12,6 +13,7 @@ Utilizing Depth Sensors for Analyzing Multimodal Presentations: Hardware, Softwa
 Chee Wee Leong, Lei Chen, Gary Feng, Chong Min Lee and Matthew MulHolland,
 in Proceedings of the 4th Multimodal Learning Analytics Workshop and Grand Challenges (MLA), Seattle, 2015
 
+A talk about VAMP will be given at [PyGotham 2016](https://2016.pygotham.org/)
 
 Biovision Hierarchical (BVH) Format
 ---------
@@ -42,15 +44,15 @@ VAMP can be configured to extract expressive features from arbitrary body parts,
 "body_parts": ["Hips","Spine","LeftShoulder","RightShoulder",
     			"LeftArm","RightArm","LeftForeArm","RightForeArm",
     			"LeftHand","RightHand"]
-```    			
+```
 
 For specifying the weights of each body part in contribution to the overall kinetic energy, use:
 
 ```javascript
-	"weights": {"Hips": 14.81, "Spine" : 12.65, "LeftShoulder" : 0.76875, 
-				"RightShoulder" : 0.76875, "LeftArm" : 1.5375, 
+	"weights": {"Hips": 14.81, "Spine" : 12.65, "LeftShoulder" : 0.76875,
+				"RightShoulder" : 0.76875, "LeftArm" : 1.5375,
 				"RightArm" : 1.5375, "LeftForeArm" : 0.86,
-				"RightForeArm" : 0.86, "LeftHand" : 0.2875, 
+				"RightForeArm" : 0.86, "LeftHand" : 0.2875,
 				"RightHand" : 0.2875 },
 ```
 
@@ -63,7 +65,7 @@ For symmetry indexes, the `anchor` serves as the axis of symmetry between two co
 Note that, for spatial displacements and their first-order (temporal) and second-order (power) derivations, the displacement is measured from the `anchor` to each member of the `parts` list:
 
 ```javascript
-	"spatial": [{"anchor": "Spine", "parts": ["LeftHand", "RightHand"]}, 
+	"spatial": [{"anchor": "Spine", "parts": ["LeftHand", "RightHand"]},
 				{"anchor": "Spine", "parts": ["LeftArm", "RightArm"]},
 				{"anchor": "LeftHand", "parts": ["RightHand"]}]
 ```
