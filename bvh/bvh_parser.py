@@ -16,7 +16,7 @@ import sys
 import json
 import csv
 from os.path import join
-sys.path.append('../BVHplay/')
+sys.path.append('BVHplay/')
 
 from skeleton import skeleton, process_bvhfile
 import pandas as pd
@@ -175,9 +175,12 @@ def main():
         this_bvh_df = pd.DataFrame(list_bparts).transpose()
         this_bvh_df.index += 1
         this_bvh_df.columns = header
+
         this_bvh_df.to_csv(
             join(
                 output_dir,
+                bvh_file,
+                'bvh',
                 bvh_file +
                 '.framelevelbvh.csv'),
             quoting=csv.QUOTE_MINIMAL)
