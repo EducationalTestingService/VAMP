@@ -1,0 +1,18 @@
+{
+    "body_parts": ["Hips","Chest","LeftCollar","RightCollar",
+    			"LeftShoulder","RightShoulder","LeftElbow","RightElbow",
+    			"LeftWrist","RightWrist"],
+
+	"weights": {"Hips": 14.81, "Chest" : 12.65, "LeftCollar" : 0.76875,
+				"RightCollar" : 0.76875, "LeftShoulder" : 1.5375,
+				"RightShoulder" : 1.5375, "LeftElbow" : 0.86,
+				"RightElbow" : 0.86, "LeftWrist" : 0.2875,
+				"RightWrist" : 0.2875 },
+
+	"symmetry": {"anchor": "Hips", "parts": ["LeftWrist", "RightWrist"]},
+
+	"spatial": [{"anchor": "Chest", "parts": ["LeftWrist", "RightWrist"]},
+				{"anchor": "Chest", "parts": ["LeftShoulder", "RightShoulder"]},
+				{"anchor": "LeftWrist", "parts": ["RightWrist"]}]
+
+}

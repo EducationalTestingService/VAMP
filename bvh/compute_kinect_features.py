@@ -16,7 +16,7 @@ import json
 import csv
 import re
 from os.path import join
-sys.path.append('BVHplay/')
+sys.path.append('../BVHplay/')
 
 import warnings
 warnings.simplefilter(action = "ignore", category = FutureWarning)
@@ -273,7 +273,7 @@ def main():
         TYPE: Description
     """
     sync_files_list, sync_files_dir, body_parts_specification,\
-        frame_rate, output_dir = readConfig('config.ini')
+        frame_rate, output_dir = readConfig('../config.ini')
 
     body_part_weights = read_body_part_weights(body_parts_specification)
 

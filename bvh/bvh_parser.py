@@ -16,7 +16,7 @@ import sys
 import json
 import csv
 from os.path import join
-sys.path.append('BVHplay/')
+sys.path.append('../BVHplay/')
 
 from skeleton import skeleton, process_bvhfile
 import pandas as pd
