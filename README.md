@@ -15,6 +15,8 @@ in Proceedings of the 4th Multimodal Learning Analytics Workshop and Grand Chall
 
 A talk about VAMP will be given at [PyGotham 2016](https://2016.pygotham.org/)
 
+Currently, we are working on the integration of the various components of VAMP. Until then,
+
 Biovision Hierarchical (BVH) Format
 ---------
 The Biovision Hierarchy (BVH) character animation file format was developed by Biovision. BVH provides skeleton hierarchy information as well as motion data. The BVH format is an ASCII file that is used to import rotational joint data. It is currently one of the most popular motion data formats, and has been widely adopted by the animation community.
@@ -38,7 +40,7 @@ conda install -n vamp -c https://conda.anaconda.org/cleong cgkit
 
 Configuration
 ---------
-VAMP can be configured to extract expressive features from arbitrary body parts, as long as these body parts are captured in BVH. The configuration is found in `inputs/body_parts.json`. For example, the `body_parts` field indicates which parts of the body in BVH would be targeted for expressive features extraction:
+VAMP can be configured to extract expressive features from arbitrary body parts, as long as these body parts are captured in BVH. The configuration is found in `inputs/body_parts_X.json`. For example, the `body_parts` field indicates which parts of the body in BVH would be targeted for expressive features extraction:
 
 ```javascript
 "body_parts": ["Hips","Spine","LeftShoulder","RightShoulder",
@@ -83,7 +85,7 @@ To initiate the `vamp` conda environment, type:
 source activate vamp
 ```
 
-Next, run the following to perform recursive parsing of the BVH file:
+Next, go into the bvh directory and run the following to perform recursive parsing of the BVH file:
 
 ```
 ./bvh_parser.py
@@ -95,7 +97,7 @@ Finally, execute the following to store all features into the `output` directory
 ./compute_kinect_features.py
 ```
 
-After running the two steps, you should be able to see the following in the `outputs` directory:
+After running the two steps, you should be able to see the following in the `outputs` directory in the VAMP root directory:
 
 ```
 sample.framelevelbvh.csv
