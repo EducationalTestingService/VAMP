@@ -15,7 +15,7 @@ in Proceedings of the 4th Multimodal Learning Analytics Workshop and Grand Chall
 
 A talk about VAMP will be given at [PyGotham 2016](https://2016.pygotham.org/)
 
-Currently, we are working on the integration of the various components of VAMP. Until then,
+Currently, we are working on the integration of the various components of VAMP. Until then, only BVH features can be generated.
 
 Biovision Hierarchical (BVH) Format
 ---------
