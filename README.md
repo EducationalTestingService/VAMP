@@ -4,6 +4,9 @@ Visualization and Analysis for Multimodal Presentation (VAMP)
 
 VAMP is a set of scripts designed to extract high-level, expressive body language features from synchronized video, audio and skeletal data streams recorded from multimodal presentations. Release of VAMP is incremental at this point, with the current focus on facilitating the extraction of frame-level, body language features from skeletal data files. VAMP is tested to run successfully on OS X 64-bit architecture, but would be expanded to support other platforms in the future.
 
+Currently, we are working on the integration of the various components of VAMP. Until then, only BVH features can be generated.
+
+![VAMP_screen_shot](/images/vamp_screen_shot.png)
 
 Reference
 ---------
@@ -13,9 +16,8 @@ Utilizing Depth Sensors for Analyzing Multimodal Presentations: Hardware, Softwa
 Chee Wee Leong, Lei Chen, Gary Feng, Chong Min Lee and Matthew MulHolland,
 in Proceedings of the 4th Multimodal Learning Analytics Workshop and Grand Challenges (MLA), Seattle, 2015
 
-A talk about VAMP will be given at [PyGotham 2016](https://2016.pygotham.org/)
+A talk about VAMP was given at [PyGotham 2016](https://2016.pygotham.org/talks/370/visualization-and-analysi/)
 
-Currently, we are working on the integration of the various components of VAMP. Until then, only BVH features can be generated.
 
 Biovision Hierarchical (BVH) Format
 ---------
